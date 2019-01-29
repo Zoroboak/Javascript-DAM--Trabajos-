@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Resistor</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<section>
+		<h3>Seleccione el color de cada banda en la resistencia:</h3>
+		<div class="calculator">
+		<div class="calculator-input">
+			<div class="selectColor">
+				<span class="res-select">1.º banda:</span>
+					<dl class="dropdown" id="firstband">
+						<dt>Seleccione un color <span style="float: right;"></span></dt>
+						<dd>
+							<ul data-type="firstband" style="display: block;">
+								<li data-firstband-value="0"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/black.png?la=es-ES&amp;ts=6ebe575e-d1ba-41ef-8d0f-edd8a4667cd4"> Negro&nbsp;<span class="label">0</span></li>
+								<li data-firstband-value="1"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/brown.png?la=es-ES&amp;ts=04cccf2d-442f-4947-a216-de52cc66c8ab"> Marrón&nbsp;<span class="label">1</span></li>
+								<li data-firstband-value="2"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/red.png?la=es-ES&amp;ts=7eb8fc32-7b15-4725-8feb-ba72306a63a3"> Rojo&nbsp;<span class="label">2</span></li>
+								<li data-firstband-value="3"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/orange.png?la=es-ES&amp;ts=f2692308-08d0-4663-aef1-a6c279216068"> Naranja&nbsp;<span class="label">3</span></li>
+								<li data-firstband-value="4"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/yellow.png?la=es-ES&amp;ts=2d92330d-d41b-4efd-8133-23ea58c1fee8"> Amarillo&nbsp;<span class="label">4</span></li>
+								<li data-firstband-value="5"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/green.png?la=es-ES&amp;ts=875dacc0-48a7-4c1c-a0d1-4d255e098ef9"> Verde&nbsp;<span class="label">5</span></li>
+								<li data-firstband-value="6"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/blue.png?la=es-ES&amp;ts=0a7757d7-5fa0-4608-b659-9b85cb902cc1"> Azul&nbsp;<span class="label">6</span></li>
+								<li data-firstband-value="7"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/violet.png?la=es-ES&amp;ts=25187a22-0e8c-4cb3-ab64-9576be77bbb9"> Violeta&nbsp;<span class="label">7</span></li>
+								<li data-firstband-value="8"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/gray.png?la=es-ES&amp;ts=d9b2887e-6655-4d01-84eb-fc8e09fd73d4"> Gris&nbsp;<span class="label">8</span></li>
+								<li data-firstband-value="9"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/white.png?la=es-ES&amp;ts=0f17ef22-565c-428d-b8ae-f9d7d7f947cd"> Blanco&nbsp;<span class="label">9</span></li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		<div class="calculator-input">
+			<div class="selectColor">
+				<span class="res-select">2.º banda</span>
+					<dl class="dropdown" id="secondband">
+						<dt>Seleccione un color <span style="float: right;"></span></dt>
+						<dd>
+							<ul data-type="secondband" style="display: none;">
+								<li data-secondband-value="0"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/black.png?la=es-ES&amp;ts=6ebe575e-d1ba-41ef-8d0f-edd8a4667cd4"> Negro&nbsp;<span class="label">0</span></li>
+								<li data-secondband-value="1"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/brown.png?la=es-ES&amp;ts=04cccf2d-442f-4947-a216-de52cc66c8ab"> Marrón&nbsp;<span class="label">1</span></li>
+								<li data-secondband-value="2"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/red.png?la=es-ES&amp;ts=7eb8fc32-7b15-4725-8feb-ba72306a63a3"> Rojo&nbsp;<span class="label">2</span></li>
+								<li data-secondband-value="3"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/orange.png?la=es-ES&amp;ts=f2692308-08d0-4663-aef1-a6c279216068"> Naranja&nbsp;<span class="label">3</span></li>
+								<li data-secondband-value="4"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/yellow.png?la=es-ES&amp;ts=2d92330d-d41b-4efd-8133-23ea58c1fee8"> Amarillo&nbsp;<span class="label">4</span></li>
+								<li data-secondband-value="5"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/green.png?la=es-ES&amp;ts=875dacc0-48a7-4c1c-a0d1-4d255e098ef9"> Verde&nbsp;<span class="label">5</span></li>
+								<li data-secondband-value="6"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/blue.png?la=es-ES&amp;ts=0a7757d7-5fa0-4608-b659-9b85cb902cc1"> Azul&nbsp;<span class="label">6</span></li>
+								<li data-secondband-value="7"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/violet.png?la=es-ES&amp;ts=25187a22-0e8c-4cb3-ab64-9576be77bbb9"> Violeta&nbsp;<span class="label">7</span></li>
+								<li data-secondband-value="8"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/gray.png?la=es-ES&amp;ts=d9b2887e-6655-4d01-84eb-fc8e09fd73d4"> Gris&nbsp;<span class="label">8</span></li>
+								<li data-secondband-value="9"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/white.png?la=es-ES&amp;ts=0f17ef22-565c-428d-b8ae-f9d7d7f947cd"> Blanco&nbsp;<span class="label">9</span></li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		<div class="calculator-input">
+			<div class="selectColor">
+				<span class="res-select">Multiplicador:</span>
+					<dl class="dropdown" id="multiplier">
+						<dt>Seleccione un color <span style="float: right;"></span></dt>
+						<dd>
+							<ul data-type="multiplier" style="display: none;">
+								<li data-multiplier-value="100"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/black.png?la=es-ES&amp;ts=6ebe575e-d1ba-41ef-8d0f-edd8a4667cd4"> Negro&nbsp;<span class="label">×1 Ω</span></li>
+								<li data-multiplier-value="1000"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/brown.png?la=es-ES&amp;ts=04cccf2d-442f-4947-a216-de52cc66c8ab"> Marrón&nbsp;<span class="label">×10 Ω</span></li>
+								<li data-multiplier-value="10000"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/red.png?la=es-ES&amp;ts=7eb8fc32-7b15-4725-8feb-ba72306a63a3"> Rojo&nbsp;<span class="label">×100 Ω</span></li>
+								<li data-multiplier-value="100000"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/orange.png?la=es-ES&amp;ts=f2692308-08d0-4663-aef1-a6c279216068"> Anaranjado&nbsp;<span class="label">×1 kΩ</span></li>
+								<li data-multiplier-value="1000000"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/yellow.png?la=es-ES&amp;ts=2d92330d-d41b-4efd-8133-23ea58c1fee8"> Amarillo&nbsp;<span class="label">×10 kΩ</span></li>
+								<li data-multiplier-value="10000000"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/green.png?la=es-ES&amp;ts=875dacc0-48a7-4c1c-a0d1-4d255e098ef9"> Verde&nbsp;<span class="label">×100 kΩ</span></li>
+								<li data-multiplier-value="100000000"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/blue.png?la=es-ES&amp;ts=0a7757d7-5fa0-4608-b659-9b85cb902cc1"> Azul&nbsp;<span class="label">×1 MΩ</span></li>
+								<li data-multiplier-value="1000000000"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/violet.png?la=es-ES&amp;ts=25187a22-0e8c-4cb3-ab64-9576be77bbb9"> Violeta&nbsp;<span class="label">×10 MΩ</span></li>
+								<li data-multiplier-value="10000000000"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/gray.png?la=es-ES&amp;ts=d9b2887e-6655-4d01-84eb-fc8e09fd73d4"> Gris&nbsp;<span class="label">×100 MΩ</span></li>
+								<li data-multiplier-value="100000000000"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/white.png?la=es-ES&amp;ts=0f17ef22-565c-428d-b8ae-f9d7d7f947cd"> Blanco&nbsp;<span class="label">×1 GΩ</span></li>
+								<li data-multiplier-value="10"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/gold.png?la=es-ES&amp;ts=f08b2de5-504c-4d8b-898d-be773af03f1b"> Dorado&nbsp;<span class="label">×0.1 Ω</span></li>
+								<li data-multiplier-value="1"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/silver.png?la=es-ES&amp;ts=7308f1dd-ff61-425a-bd57-e17ca2a63ade"> Plateado&nbsp;<span class="label">×0.01 Ω</span></li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		<div class="calculator-input">
+			<div class="selectColor">
+				<span class="res-select">Tolerancia:</span>
+					<dl class="dropdown" id="tolerance">
+						<dt>Seleccione un color <span style="float: right;"></span></dt>
+						<dd>
+							<ul data-type="tolerance" style="display: none;">
+								<li data-tolerance-value="1%" data-tolerance-search="1"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/brown.png?la=es-ES&amp;ts=04cccf2d-442f-4947-a216-de52cc66c8ab"> Marrón <span class="label">± 1%</span></li>
+								<li data-tolerance-value="2%" data-tolerance-search="4"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/red.png?la=es-ES&amp;ts=7eb8fc32-7b15-4725-8feb-ba72306a63a3"> Rojo&nbsp;<span class="label">± 2%</span></li>
+								<li data-tolerance-value=".5%" data-tolerance-search="355"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/green.png?la=es-ES&amp;ts=875dacc0-48a7-4c1c-a0d1-4d255e098ef9"> Verde <span class="label">± 0.5%</span></li>
+								<li data-tolerance-value=".25%" data-tolerance-search="377"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/blue.png?la=es-ES&amp;ts=0a7757d7-5fa0-4608-b659-9b85cb902cc1"> Azul <span class="label">± 0.25%</span></li>
+								<li data-tolerance-value=".10%" data-tolerance-search="370"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/violet.png?la=es-ES&amp;ts=25187a22-0e8c-4cb3-ab64-9576be77bbb9"> Violeta&nbsp;<span class="label">± 0.1%</span></li>
+								<li data-tolerance-value=".05%" data-tolerance-search="380"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/gray.png?la=es-ES&amp;ts=d9b2887e-6655-4d01-84eb-fc8e09fd73d4"> Gris&nbsp;<span class="label">± 0.05%</span></li>
+								<li data-tolerance-value="5%" data-tolerance-search="2"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/gold.png?la=es-ES&amp;ts=f08b2de5-504c-4d8b-898d-be773af03f1b"> Dorado <span class="label">± 5%</span></li>
+								<li data-tolerance-value="10%" data-tolerance-search="3"><img src="//www.digikey.es/-/media/Images/Marketing/Resources/Calculators/Circles/silver.png?la=es-ES&amp;ts=7308f1dd-ff61-425a-bd57-e17ca2a63ade"> Plateado <span class="label">± 10%</span></li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
+			</div>
+	</div>
+
+	<div class="current">
+    <strong style="font-size: 13px;">Valor de la resistencia:</strong> <span style="padding-left: 5px;" id="custom-search"></span><div class="resCalcSearch"></div>
+	</div>
+
+	</section>
+
+
+	<script src="script.js"></script>
+</body>
+</html>
