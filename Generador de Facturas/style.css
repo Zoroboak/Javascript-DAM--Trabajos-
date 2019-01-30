@@ -12,7 +12,7 @@
 .tg .tg-73oq{text-align:center;vertical-align:top}
 .tg .tg-0pky{text-align:center;vertical-align:top}
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
 	.tg {width: auto !important;}
 	.tg col {width: auto !important;}
 	.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}
@@ -77,3 +77,13 @@
 	float: right;
 	display: block;
 }*/
+
+@media only screen and (max-width: 1100px) {
+	.salida{
+		width: 80%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
