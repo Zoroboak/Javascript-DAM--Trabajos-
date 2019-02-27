@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Juego Piedra Papel y Tijeras</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+	<section class="sec-1">
+		<div class="container-t">
+			<p class="t-fz">¿Cuantos dados quieres tirar?</p>
+			<div>
+				<input type="radio" id="inpt-2-dados" name="opc" value="2" onclick="dos_dados()">
+	    		<label for="inpt-2-dados">2 Dados</label>
+	    		<input type="radio" id="inpt-3-dados" name="opc" value="3" onclick="tres_dados()">
+	    		<label for="inpt-3-dados">3 Dados</label>
+	    		<input type="radio" id="inpt-4-dados" name="opc" value="4" onclick="cuatro_dados()">
+	    		<label for="inpt-4-dados">4 Dados</label>
+
+	    		<button type="button" onclick="tirada()">Generar Tirada</button> 
+			</div>
+		</div>
+	</section>
+
+	<section class="sec-2">
+
+		<div class="sec-2-jugada">
+			<div class="t-1"><span>Escoge una jugada</span></div>
+			<div class="container-d">
+				<div id="djg-piedra" class="f-left"><img onclick="jusuario(event,1)" src="recursos/Piedra.png" alt="" class="img-jugada" id="jg-piedra"></div>
+				<div id="djg-papel" class="f-left"><img onclick="jusuario(event,2)" src="recursos/Papel.png" alt="" class="img-jugada" id="jg-papel"></div>
+				<div id="djg-tijeras" class="f-left"><img onclick="jusuario(event,3)" src="recursos/Tijeras.png" alt="" class="img-jugada" id="jg-tijeras"></div>
+			</div>
+		</div>
+
+		<div class="sec-2-jugada">
+			<div  class="t-1"><span>La Maquina esta escogiendo</span></div>
+			<div class="container-d">
+				<div id="dmq-piedra" class="f-left"><img onclick="jusuario(event,1)" src="recursos/Piedra.png" alt="" class="img-jugada" id="mq-piedra"></div>
+				<div id="dmq-papel" class="f-left"><img onclick="jusuario(event,2)" src="recursos/Papel.png" alt="" class="img-jugada" id="mq-papel"></div>
+				<div id="dmq-tijeras" class="f-left"><img onclick="jusuario(event,3)" src="recursos/Tijeras.png" alt="" class="img-jugada" id="mq-tijeras"></div>
+			</div>
+		</div>
+
+	</section>
+	<script src="script.js"></script>
+</body>
+</html>

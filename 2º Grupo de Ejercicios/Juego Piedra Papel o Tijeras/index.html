@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>¡Juego Piedra Papel o Tijeras en HTML5!</title>
+	<meta name="description" content="Juego Piedra Papel o Tijeras en HTML5!">
+	<meta name="keywords" content="HTML5,Juegos,Piedra Papel o Tijeras">
+	<meta name="author" content="Pedro Pérez">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+	
+	<header>
+		<h1>¡Juego Piedra Papel o Tijeras en HTML5!</h1>
+		<div class="tg-wrap">
+			<table class="tg">
+			  <tr>
+			    <th class="tg-s268">Partidas</th>
+			    <th class="tg-s268">Victorias</th>
+			    <th class="tg-s268">Empates</th>
+			    <th class="tg-s268">Derrotas</th>
+			  </tr>
+			  <tr>
+			    <td class="tg-s268" id="t-part">0</td>
+			    <td class="tg-cvn7" id="t-vict">0</td>
+			    <td class="tg-s268" id="t-empt">0</td>
+			    <td class="tg-cvn7" id="t-derr">0</td>
+			  </tr>
+			</table>
+		</div>
+	</header>
+	<section>
+		<div>
+			<h2>¡Escoge tu jugada!</h2>
+			<div>
+				<div class="cp" id="djg-piedra"><img onclick="jusuario(event,1)" src="recursos/Piedra.png" alt="" id="jg-piedra"></div>
+				<div class="cp" id="djg-papel"><img onclick="jusuario(event,2)" src="recursos/Papel.png" alt="" id="jg-papel"></div>
+				<div class="cp" id="djg-tijeras"><img onclick="jusuario(event,3)" src="recursos/Tijeras.png" alt="" id="jg-tijeras"></div>
+			</div>
+		</div>
+		<div>
+			<h2>¡La maquina esta escogiendo!</h2>
+			<div class="cont-opc">
+				<div id="dmq-piedra"><img src="recursos/Piedra.png" alt="" id="mq-piedra"></div>
+				<div id="dmq-papel"><img src="recursos/Papel.png" alt="" id="mq-papel"></div>
+				<div id="dmq-tijeras"><img src="recursos/Tijeras.png" alt="" id="mq-tijeras"></div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<span id="notif">¡Escoge tu jugada!</span>
+		<button type="button" onclick="jugar()">Generar Tirada</button>
+
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>

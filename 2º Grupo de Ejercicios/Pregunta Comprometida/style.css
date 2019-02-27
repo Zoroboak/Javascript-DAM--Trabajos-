@@ -1,0 +1,72 @@
+
+/*Por Pedro Pérez a 18/02/2019
+Modulo: LMAR*/
+
+body{
+	background-image: url("bg.png");
+	background-image: no-repeat;
+	background-image: fixed;
+	background-image: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center top;
+}
+
+section{
+	background-color: #D3D3D3;
+	background-color: rgba(127, 155, 196, 0.74);
+	padding: 2%;
+	padding-left: 3%;
+	padding-right: 3%;
+	margin: 24%;
+	margin-top: 10%;
+	text-align: center;
+	font-size: 2.2em;
+	color: #09172E;
+	display: block;
+	float: center;
+	padding-bottom: 8%;
+}
+
+button{
+	width: 50%;
+	padding: 10px;
+	background-color: #424153;
+	background-color: #0F403B;
+	color: white;
+	font-size: 1em;
+	margin-bottom: 8px;
+	border-color: #999999;
+	color: #e8e8e8;
+	display: block;
+	float: left;
+}
+
+#no{
+	background-color: #C94528;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+	body{
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-color: #C9DEFA;
+	}
+
+	section{
+	  	margin: 15%;
+	  	margin-top: 25%;
+	  	padding-bottom: 50%;
+	  	margin-bottom: 0;
+	  	font-size: 1.5rem;
+	  	padding: 20px;
+	  	padding-bottom: 90px;
+	  }
+  
+  
+}

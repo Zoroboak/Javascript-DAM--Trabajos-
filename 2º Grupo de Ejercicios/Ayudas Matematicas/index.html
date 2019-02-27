@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>WebAPP de Ayuda Matemática</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans|Satisfy" rel="stylesheet"> 
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!--Por Pedro Pérez a 18/02/2019
+	Modulo: LMAR-->
+</head>
+<body onload="openEcuacion(event, 'Multiplos Menores')">
+	<header>
+		<br>
+		<h1>WebAPP de Ayuda Matemática</h1>
+		<hr>
+	</header>
+	<section>
+		 <div class="tab">
+		  <button class="tablinks" onclick="openEcuacion(event, 'Multiplos Menores')">Multiplos Menores</button>
+		  <button class="tablinks" onclick="openEcuacion(event, 'Nº Primos Inferiores')">Nº Primos Inferiores</button>
+		  <button class="tablinks" onclick="openEcuacion(event, 'Ecuaciones de 2º')">Ecuaciones de 2º</button>
+		</div>
+
+		<div id="Multiplos Menores" class="tabcontent">
+		 	<h2>Mostrar múltiplos menores que un número dado </h2>
+			<input type="number" name="" id="m-menores"><br><br>
+			<button type="button" class="ecu-btt" onclick="multiplo()">Calcular</button> 
+			<br>
+			<br>
+			<span class="t-b">Multiplos de <span class="t-b" id="m-num">X</span> menores que el mismo: </span><span id="result-multiplos"></span>
+
+
+			<span class="resp"></span>
+			<br>
+		</div>
+		<div id="Nº Primos Inferiores" class="tabcontent d-n">
+			<h2>Mostrar los números primos inferiores a un número dado</h2>
+			<input type="number" name="" id="n-primo"><br><br>
+			<button type="button" class="ecu-btt" onclick="nPrimos()">Calcular</button> 
+			<br>
+			<br>
+			<span class="t-b">Numeros primos menores: </span><span id="result-primo"></span>
+		</div>
+
+		<div id="Ecuaciones de 2º" class="tabcontent d-n">
+		 	<h2>Resultado de ecuaciones de segundo grado</h2>
+		 	<span>Ejemplo: </span><span class="ff-sc"> ax² + bx +c = 0 (Nota: a ≠ 0.)</span>
+		 	<br/><br/>
+			<input type="number" name="" id="ecu-a" placeholder="a"/><span>x</span><sup>2</sup><span> +  </span>
+			<input type="number" name="" id="ecu-b" placeholder="b"/><span>x</span><span> + </span>
+			<input type="number" name="" id="ecu-c" placeholder="c"/><span> = 0</span>
+
+			<br><br><br>
+			<span class="t-b">Resultado 1: </span><span class="" id="ecu-resp1"></span><br>
+			<span class="t-b">Resultado 2: </span><span class="" id="ecu-resp2"></span><br>
+			<sub>Si el resultado es NaN es por que no tiene solución la ecuación</sub><br><br>
+			<button type="button" class="ecu-btt" onclick="segundoGrado()">Calcular</button> 
+			<br>
+
+		</div> 
+	</section>
+	<footer>
+		
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>

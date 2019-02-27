@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Juego de Dados</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700" rel="stylesheet"> 
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<!--Por Pedro Pérez a 18/02/2019
+	Modulo: LMAR-->
+</head>
+<body>
+	<section class="sec-1">
+		<div class="container-t">
+			<p class="t-fz">¿Cuantos dados quieres tirar?</p>
+			<div>
+				<input type="radio" id="inpt-2-dados" name="opc" value="2" onclick="dos_dados()">
+	    		<label for="inpt-2-dados">2 Dados</label>
+	    		<input type="radio" id="inpt-3-dados" name="opc" value="3" onclick="tres_dados()">
+	    		<label for="inpt-3-dados">3 Dados</label>
+	    		<input type="radio" id="inpt-4-dados" name="opc" value="4" onclick="cuatro_dados()">
+	    		<label for="inpt-4-dados">4 Dados</label>
+
+	    		<button type="button" onclick="tirada()">Generar Tirada</button> 
+			</div>
+		</div>
+	</section>
+
+	<section class="sec-2">
+		<div class="container-d">
+			<img src="dados/72dpi_Die_Red_Rojo_1.png" alt="" class="img-dado" id="dado-1">
+			<img src="dados/72dpi_Die_Red_Rojo_1.png" alt="" class="img-dado" id="dado-2">
+			<img src="dados/72dpi_Die_Red_Rojo_1.png" alt="" class="img-dado" id="dado-3">
+			<img src="dados/72dpi_Die_Red_Rojo_1.png" alt="" class="img-dado" id="dado-4">
+		</div>
+	</section>
+	<script src="script.js"></script>
+</body>
+</html>

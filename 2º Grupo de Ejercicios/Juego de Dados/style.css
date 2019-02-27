@@ -1,0 +1,165 @@
+
+/*Por Pedro Pérez a 18/02/2019
+Modulo: LMAR*/
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+html,body{
+
+	margin:0px;
+	height:100%;
+
+}
+
+body{
+	background-image: url("bg.jpg");
+	background-repeat: no-repeat; 
+	background-position: top center;
+	background-image: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+	max-height: 100%;
+	position: static;
+}
+
+
+
+section{
+	position: static;
+	display: block;
+	float: left;
+	width: 50%;
+	max-width: 50%;
+	max-height: 100%;
+	height: 100%;
+}
+
+.sec-1{
+	/*background-color: green;*/
+	display: table;
+}
+
+.sec-2{
+	/*background-color: orange;*/
+
+
+
+}
+
+.container-t{
+	padding-left: 15%;
+	display: table-cell;
+	vertical-align: middle;
+	font-family: 'Roboto', sans-serif;
+}
+
+.t-fz{
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin-bottom: 2%;
+	margin-top: -4%;
+}
+
+input{
+	margin-left: 2%;
+}
+
+button{
+	margin-left: 20%;
+	text-align: center;
+	box-sizing: border-box;
+	border-radius: 0px;
+	transition: all ease 0.8s;
+	display: block;
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	padding: 15px 26px;
+	text-transform: uppercase;
+	cursor: pointer;
+	background-color: #333;
+	color: #fff;
+	border-radius: 50px;
+	margin-top: -5%;
+	/*--------*/
+	font-family: 'Noto Sans', sans-serif;
+}
+
+
+.container-d{
+	margin-top: 4em;
+	width: 80%;
+}
+
+.img-dado{
+	max-width: 18%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+
+}
+
+
+
+
+
+
+@media (min-width: 100px) and (max-width: 880px) {
+  
+	body{
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-color: #C9DEFA;
+	}
+
+	section{
+		width: 100%;
+		height: 40%;
+		max-height: 50%;
+		max-width: 100%;
+	}
+
+	.sec-1{
+		background-color: rgba(130, 114, 179, 0.5);
+		text-align: center;
+	}
+	
+	.container-t{
+		padding-left: 0%;
+	}
+
+	.container-d{
+		margin-top: 4em;
+		width: 100%;
+		display: block;
+		max-width: 100%;
+	}
+
+	.img-dado{
+		width: 20%;
+		max-width: 25%;
+		margin-left: 2.5%;
+		margin-right: 2.5%;
+		float: left;
+		display: block;
+		margin-right: 0;
+		margin-top: 2em;
+
+	}
+
+	button{
+		margin-top: 40px;
+	}
+
+}

@@ -1,0 +1,197 @@
+
+
+/*Por Pedro Pérez a 18/02/2019
+Modulo: LMAR*/
+
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+html,body{
+
+	margin:0px;
+	height:100%;
+
+}
+
+body{
+	background-color: green;
+	background-repeat: no-repeat; 
+	background-position: top center;
+	background-image: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+	max-height: 100%;
+	position: static;
+}
+
+
+
+section{
+	position: static;
+	display: block;
+	float: left;
+	width: 100%;
+	max-width: 100%;
+}
+
+.sec-1{
+	/*background-color: green;*/
+	display: table;
+	max-height: 30%;
+	height: 30%;
+}
+
+.sec-2{
+	/*background-color: orange;*/
+	max-height: 70%;
+	height: 70%;
+}
+
+.sec-2-jugada{
+	max-width: 50%;
+	width: 49.6%;
+	max-height: 100%;
+	height: 100%;
+	display: inline-block;
+
+}
+
+.t-1{
+	color: red;
+}
+
+.container-t{
+	padding-left: 15%;
+	display: table-cell;
+	vertical-align: middle;
+	font-family: 'Roboto', sans-serif;
+}
+
+.t-fz{
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin-bottom: 2%;
+	margin-top: -4%;
+}
+
+input{
+	margin-left: 2%;
+}
+
+button{
+	margin-left: 20%;
+	text-align: center;
+	box-sizing: border-box;
+	border-radius: 0px;
+	transition: all ease 0.8s;
+	display: block;
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	padding: 15px 26px;
+	text-transform: uppercase;
+	cursor: pointer;
+	background-color: #333;
+	color: #fff;
+	border-radius: 50px;
+	margin-top: -5%;
+	/*--------*/
+	font-family: 'Noto Sans', sans-serif;
+}
+
+
+.container-d{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 50%;
+}
+
+.jugada-span{
+	font-size: 2rem;
+}
+
+.img-jugada{
+	width: 75%;
+	float: all;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	bottom: 0;
+
+}
+
+.img-jugada:hover{
+	width: 90%;
+	margin-top: -20px;
+}
+
+.active{
+	width: 90%;
+	margin-top: -20px;
+}
+
+.f-left{
+	margin: 0;
+	float: left;
+	display: block;
+	width: 16%;
+	margin-top: -20px;
+}
+
+
+
+
+
+@media (min-width: 100px) and (max-width: 880px) {
+  
+	
+
+	section{
+		width: 100%;
+		height: 40%;
+		max-height: 50%;
+		max-width: 100%;
+	}
+
+	.sec-1{
+		background-color: rgba(130, 114, 179, 0.5);
+		text-align: center;
+	}
+	
+	.container-t{
+		padding-left: 0%;
+	}
+
+	.container-d{
+		margin-top: 4em;
+		width: 100%;
+		display: block;
+		max-width: 100%;
+	}
+
+	.img-dado{
+		width: 20%;
+		max-width: 25%;
+		margin-left: 2.5%;
+		margin-right: 2.5%;
+		float: left;
+		display: block;
+		margin-right: 0;
+		margin-top: 2em;
+
+	}
+
+	button{
+		margin-top: 40px;
+	}
+
+}
